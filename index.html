@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>My Todo List</title>
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <input type="checkbox" name="menue-toggle" id="menue-toggle">
+  	<header>
+  	  <nav>
+        <dl id="all-todos">
+          <dt><img src="all-todos.png" alt="All Todos"><p>All Todos</p></dt>
+            <dd class="selected"><p>02/16</p></dd>
+            <dd><p>03/16</p></dd>
+            <dd><p>04/16</p></dd>
+            <dd><p>05/16</p></dd>
+            <dd><p>06/16</p></dd>
+        </dl>
+        <dl id="completed">
+          <dt><img src="done.png" alt="Completed"><p>Completed</p></dt>
+            <dd><p>02/15</p></dd>
+            <dd><p>03/15</p></dd>
+            <dd><p>04/15</p></dd>
+            <dd><p>05/15</p></dd>
+            <dd><p>06/14</p></dd>
+        </dl>
+  	  </nav>
+    </header>
+      <main>
+        <label for="menue-toggle">
+          <img src="hamburger.png" alt="Hamburger Menue" id="hamburger">
+        </label>
+
+        <!-- Modal Begin -->
+        <input type="checkbox" name="item-edit" id="item-edit" hidden>
+        <form action="#" method="post">
+          <dl>
+            <dt>
+              <label for="title">
+                Title
+              </label>
+            </dt>
+            <dd>
+              <input type="text" name="title" id="title" value="Item 1">
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <label for="duedate">
+                Due Date
+              </label>
+            </dt>
+            <dd>
+              <input type="number" min="1" max="30" name="day" value="16" id="duedate"> /
+              <input type="number" min="1" max="12" placeholder="Month" name="Month" id="duedate"> /
+              <input type="number" min="2020" placeholder="Year" name="year" id="duedate">
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <label for="description">
+                Description
+              </label>
+            </dt>
+            <dd>
+              <textarea rows="5" cols="30" placeholder="Description" id="description"></textarea>
+            </dd>
+          </dl>
+          <dl>
+            <dt><input type="submit" value="Save" id="Save"></dt>
+            <dd><input type="submit" value="Mark As Complete" id="Mark-Complete"></dd>
+          </dl>
+        </form>
+        <!-- Modal End -->
+
+        <!-- Listing of Todo Items-->
+  		  <h2 id="date">02/16</h2>
+  		  <table>
+  			  <thead>
+  				  <tr>
+  					  <th><img src="plus.png" alt="Add Todo"></th>
+  					  <td colspan="2">Add new to do</td>
+  				  </tr>
+  			  </thead>
+  			  <tbody>
+  				  <tr>
+  				    <th><img src="unticked-box.png" alt="Not Done"></th>
+              <td>
+                <label for="item-edit">Item 1</label>
+              </td>
+  				    <td><img src="trash.png" alt="Delete"></td>
+  			    </tr>
+  			    <tr>
+  				    <th><img src="unticked-box.png" alt="Not Done"></th>
+  				    <td>Item 2</td>
+  				    <td><img src="trash.png" alt="Delete"></td>
+  			    </tr>
+  			    <tr class="done">
+  				    <th><img src="ticked-box.png" alt="Done"></th>
+  				    <td>Item 3</td>
+  				    <td><img src="trash.png" alt="Delete"></td>
+  			    </tr>
+  			    <tr class="done">
+  				    <th><img src="ticked-box.png" alt="Done"></th>
+  				    <td>Item 4</td>
+  				    <td><img src="trash.png" alt="Delete"></td>
+  			    </tr>
+  			    <tr class="done">
+  				    <th><img src="ticked-box.png" alt="Done"></th>
+  				    <td>Item 5</td>
+  				    <td><img src="trash.png" alt="Delete"></td>
+  			    </tr>
+  			    <tr>
+  				    <th><img src="unticked-box.png" alt="Not Done"></th>
+  				    <td>Item 6</td>
+  				    <td><img src="trash.png" alt="Delete"></td>
+  			    </tr>
+  			    <tr>
+  				    <th><img src="unticked-box.png" alt="Not Done"></th>
+  				    <td>Item 7</td>
+  				    <td><img src="trash.png" alt="Delete"></td>
+  			    </tr>
+  			    <tr>
+  				    <th><img src="unticked-box.png" alt="Not Done"></th>
+  				    <td>Item 8</td>
+  				    <td><img src="trash.png" alt="Delete"></td>
+  			    </tr>
+  			    <tr>
+  				    <th><img src="unticked-box.png" alt="Not Done"></th>
+  				    <td>Item 9</td>
+  				    <td><img src="trash.png" alt="Delete"></td>
+  			    </tr>
+  			  </tbody>
+  		</table>
+    </main>
+  </body>
+</html>

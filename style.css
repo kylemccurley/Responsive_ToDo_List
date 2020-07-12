@@ -1,0 +1,433 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+}
+
+html {
+	font: 16px Helvetica, Arial, sans-serif;
+	letter-spacing: 0.07rem;
+}
+
+ul {
+	list-style-type: none;
+	margin-bottom: 40px;
+}
+
+header {
+  width: 335px;
+  height: 818px;
+  display: inline-block;
+  background-color: #464f77;
+}
+
+nav {
+  color: #ffffff;
+  width: 335px;
+  display: inline-block;
+  position: relative;
+  top: 75px;
+  text-align: center;
+  float: left;
+}
+
+nav li {
+  text-align: center;
+  padding-top: 20px;
+}
+
+nav li.selected {
+  background-color: #38405e;
+  margin-top: 10px;
+}
+
+nav li.selected p {
+  position: relative;
+  bottom: 10px;
+}
+
+ul#completed ul li,
+ul#all-todos ul {
+  color: #b2b5c3;
+}
+
+ul#completed ul li {
+  text-decoration: line-through;
+}
+
+tr.done td:first-of-type {
+	text-decoration: line-through;
+}
+
+/* Icons With Count of Events */
+
+form {
+	display: none;
+}
+
+textarea {
+	resize: none;
+	width: 395px;
+	border: 1px solid lightgray;
+	padding: 5px;
+	padding-top: 10px;
+	font: 16px Helvetica, Arial, sans-serif;
+	font-weight: 200;
+}
+
+ul#completed li:first-child img {
+  float: left;
+  position: relative;
+  left: 100px;
+}
+
+ul#completed li:first-child img {
+	left: 95px;
+}
+
+main {
+	box-sizing: border-box;
+	display: block;
+	height: 818px;
+	flex-grow: 1;
+	padding-top: 75px;
+	padding-left: 20px;
+}
+
+main h2 {
+	margin-bottom: 25px;
+	font-weight: 200;
+}
+
+main p {
+	margin-bottom: 25px;
+	margin-left: 5px;
+	font-weight: 300;
+}
+
+main p::after {
+	content: "8";
+	background-color: #148fd5;
+	color: #efefef;
+	border-radius: 100%;
+	padding: 2px 6px 2px 6px;
+	margin-left: 1.5rem;
+}
+
+main table {
+	width: 90%;
+	border-collapse: collapse;
+}
+
+main thead td {
+	color: #148fd5;
+}
+
+main tbody th {
+	width: 10px;
+	padding-right: 10px;
+}
+
+main th, td {
+	border-bottom: 1px solid  #e7e7e7;
+	padding: 14px 0 14px 0;
+	color: #060606;
+	font-weight: 300;
+}
+
+tbody tr:last-of-type th,
+tbody tr:last-of-type td {
+	border: none;
+}
+
+tr td:last-of-type {
+	width: 10px;
+}
+
+tr.done td {
+	color: #b3b3b3;
+}
+
+tbody th {
+	color: #b2b5c3;
+}
+
+dl dt img{
+	margin-right: 10px;
+}
+
+dl dt,
+dl dd {
+  height: 40px;
+  line-height: 40px;
+  font-weight: 200;
+}
+
+dt p {
+	display: inline-block;
+	position: relative;
+	bottom: 5px;
+}
+
+dl dd.selected {
+	background-color: #38405e;
+}
+
+dl#all-todos {
+	margin-bottom: 60px;
+}
+
+form dl:nth-child(2) dd {
+	position: relative;
+	right: 7.5px;
+}
+
+form dl:nth-child(3) dd {
+	position: relative;
+	right: 15px;
+}
+
+dl#all-todos dt:after
+ {
+	content: "18";
+	background-color: #6b7292;
+	color: #efefef;
+	border-radius: 75px;
+	padding: 1px 3px 1px 3px;
+	position: relative;
+	left: 65px;
+	bottom: 6px;
+}
+
+dd.selected::after {
+	content: "8";
+	background-color: #148fd5;
+	color: #efefef;
+	border-radius: 100%;
+	padding: 1px 4px 1px 4px;
+	position: relative;
+	left: 120px;
+	bottom: 40px;
+}
+
+dl#all-todos dd:nth-child(3)::after {
+	content: "2";
+	background-color: #6b7292;
+	color: #efefef;
+	border-radius: 100%;
+	padding: 1px 4px 1px 4px;
+	position: relative;
+	left: 120px;
+	bottom: 40px;
+}
+
+dl#all-todos dd:nth-child(4)::after
+ {
+	content: "1";
+	background-color: #6b7292;
+	color: #efefef;
+	border-radius: 100%;
+	padding: 1px 4px 1px 4px;
+	position: relative;
+	left: 120px;
+	bottom: 40px;
+}
+
+dl#all-todos dd:nth-child(5)::after
+ {
+	content: "1";
+	background-color: #6b7292;
+	color: #efefef;
+	border-radius: 100%;
+	padding: 1px 4px 1px 4px;
+	position: relative;
+	left: 120px;
+	bottom: 40px;
+}
+
+dl#all-todos dd:nth-child(6)::after
+ {
+	content: "6";
+	background-color: #6b7292;
+	color: #efefef;
+	border-radius: 100%;
+	padding: 1px 4px 1px 4px;
+	position: relative;
+	left: 120px;
+	bottom: 40px;
+}
+
+dl#all-todos dd,
+dl#completed dd {
+  color: #b2b5c3;
+}
+
+dl#completed dd {
+  text-decoration: line-through;
+}
+
+h2#date::after {
+  content: "8";
+	background-color: #148fd5;
+	color: #efefef;
+	border-radius: 100%;
+	padding: 1px 5px 1px 5px;
+	font-weight: 200;
+	font-size: 1rem;
+	position: relative;
+  left: 20px;
+  bottom: 4px;
+  z-index: 0;
+}
+
+nav dl dd:hover {
+	background-color: #38405e;
+}
+
+form dl {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 25px;
+}
+
+form dl:first-child {
+	padding-top: 40px;
+}
+
+form dl dd {
+	width: 395px;
+}
+
+form dl:first-child dd input {
+	width: 100%;
+}
+
+form dl:last-of-type dt input,
+form dl:last-of-type dd input
+ {
+  box-sizing: border-box;
+  display: inline-block;
+  color: white;
+  background-color: #148fd5;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 15px 0;
+  line-height: 0.1rem;
+  height: 1.5vw;
+}
+
+form dl:last-of-type dd,
+form dl:last-of-type dt
+ {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 185px;
+	position: relative;
+	left: 85px;
+	top: 15px;
+	margin-right: 15px;
+	padding: 15px 0;
+	font-weight: 200;
+}
+
+form dl:last-of-type {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+form dl:last-of-type input {
+  font-size: 1.1rem;
+}
+
+form dl:nth-child(3) dt {
+  margin: 0;
+  margin-left: 12px;
+}
+
+form {
+  box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+}
+
+form dl:nth-child(2) input {
+  width: 115px;
+}
+
+form input {
+  height: 2rem;
+  line-height: 0.5rem;
+  border: 1px solid lightgray;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+img#hamburger {
+	display: none;
+}
+
+input#menue-toggle {
+	display: none;
+}
+
+input[type="submit"] {
+  width: 184px;
+}
+
+form dl label {
+  font-weight: 500;
+}
+
+input[name="item-edit"]:checked + form {
+	display: inline-block;
+	position: absolute;
+	top: 12%;
+	left: 40%;
+	width: 690px;
+	height: 420px;
+	z-index: 100;
+	background-color: white;
+}
+
+@media (max-width: 768px) {
+	header {
+	  position: absolute;
+	  left: 100vw;
+	  z-index: 2;
+	}
+
+	form {
+	  display: none;
+	}
+
+	main {
+	  display: block;
+	  height: 818px;
+	  overflow: hidden;
+	  width: auto;
+	}
+
+	img#hamburger {
+	  display: inline-block;
+	  width: 25px;
+	  height: 25px;
+	  position: absolute;
+	  top: 20px;
+	}
+
+  /* This selector was particurly challenging. I had to move the input to the top of the header
+  instead of between <main> and <header> for the header to register as a sibling.
+  Reading general sibling selector documentation on MDN solved this. */
+
+	input#menue-toggle:checked + header {
+      position: absolute;
+      left: 0;
+	}
+
+	input#menue-toggle:checked ~ main {
+	  transform: translateX(335px);
+	}
+}

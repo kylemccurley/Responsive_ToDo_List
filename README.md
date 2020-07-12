@@ -13,5 +13,4 @@
 - Added a label for the description textarea.
 - All text in <label>'s are bold-faced. I initially entered `bold` for the font-family value, but the weight seemed to intense. So, I brought the value down to 400.
 - Increased the top padding for text area to 10px, kept the padding value of 5px for the area of the textbox.
-- Increased font-size to 1.1rem for the `Save` and `Mark as Completed` buttons.
-- 
+- Increased font-size to 1.1rem for the `Save` and `Mark as Completed` buttons. 

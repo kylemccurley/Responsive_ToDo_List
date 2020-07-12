@@ -1,6 +1,6 @@
 # Todo List
 
-##Notes
+## Notes
 - The Media Queries seem to respond to window resizing, but do not respond when the phone screens are used in the inspector tools. I tried to include the extra parameter `screen` to see if it would fix the problem, but it did not. Mobile display is shown when the browser is resized to <= 768px in width.
 - This may be unconventional, so I will make note. I used a large box shadow as the overlay for the modal.
 - I used the given dimensions from the design file height (818px).
